@@ -190,6 +190,7 @@ span{
 }
 
 .bio-separador{
+max-width: 100%;
 width: 20rem;
 height: auto;
 opacity: 0.6;
@@ -428,6 +429,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     gap: 2rem;
     }
 
@@ -435,10 +437,22 @@ footer{
       max-width: 100%;
       padding: 0 1rem;
     }
+    
+    .card{
+      width: 100%;
+      max-width: 28rem;
+    }
 
-      .contenedor-mapas {
+    .contenedor-mapas {
     flex-direction: column;
     width: 100%;
+  }
+  .seccion-mapas{
+    width: 100%;
+  }
+
+  .bio-separador{
+    width: 14rem;
   }
 
   .seccion-mapas {
