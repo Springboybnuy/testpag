@@ -15,6 +15,7 @@
   
 }
 
+
 /* 
 totalidad pagina
 */
@@ -34,34 +35,43 @@ body {
   
 }
 
-/* bgs */
-
-.fondo-inicio{
-background-image: url("../media/img/Fondo\ Facultad.png");
-min-height: 100vh;
-background-size: cover;
-background-position: center;
+html{
+  scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 8rem;
+}
+
+
+h1{
+  font-family: var(--font-title);
+}
+
+p{
+  font-family: var(--font--body);
+}
+
+main{
+  padding-top: 7rem;
+}
 /* 
 ENCABEZADO
 */
 
-
-
 .encabezado-sitio {
-  top: 2rem;
-  position:absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
   z-index: 10;
   background-color:#ffffff;
-
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
   
   /* fixed nav */
   
-  transition:top 0s ease;
+  transition:top 0.3s ease;
 }
 
 .encabezado-sitio.fijo {
@@ -72,10 +82,7 @@ ENCABEZADO
 .encabezado-contenedor {
   max-width: var(--max-width);
   margin: auto;
-  margin-top: 1rem;
   padding: 0 1.5rem;
-  height: 2rem;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,19 +91,14 @@ ENCABEZADO
 
 a:hover{
   color: var(--color-primary);
-  text-shadow: 0 0 0.5rem rgba(34, 99, 248, 0.616);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 255, 0.616);
 
 }
 
-
-
-
-/* Usar en mitad  */
 .marca-logo img {
-  max-height: 5rem;
+  height: 2.5rem;
   width: auto;
   display: block;
-  margin-bottom: 1rem;
 }
 
 .marca-nombre {
@@ -144,6 +146,11 @@ p{
   margin: 5rem auto 0 auto;
   max-width: 60%;
 }
+
+.bloque-bio{
+  margin-top: 0;
+}
+
 .bio-texto .titular {
   margin-bottom: 0.5rem;
 }
@@ -163,7 +170,7 @@ span{
 .bio-contenedor {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 4rem;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -175,14 +182,38 @@ span{
   flex: 0.8;
 }
 
+.bio-separador{
+width: 20rem;
+height: auto;
+opacity: 0.6;
+}
+
 .bio-imagen img {
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 0 1.2rem 2.5rem rgba(0, 0, 0, 0.45);
 }
-.bloque-bio{
-  margin-top: 10rem;
+
+.card {
+  background-color: #f5f6f8;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.areas-contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+  row-gap: 4rem;
+  column-gap: 3rem;
 }
 
 
@@ -236,13 +267,24 @@ Iframes
 /*
 Forms
 */
+
+.titulo-formulario {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
 .contenedor-centro {
   margin-top: 10rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 4rem 1rem;
 }
+
 
 .contenedor-forms {
   background-color: #fff;
@@ -250,6 +292,9 @@ Forms
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.25);
   width: 100%;
   max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -290,16 +335,12 @@ Forms
 }
 
 
-
-
-
 /* 
 Footer
 */
 
-.footer-base {
-  background-color: var(--color-secondary);
-  margin-top: 6rem;
+footer{
+  background-color: rgb(184, 184, 184);
 }
 
 .footer-contenedor {

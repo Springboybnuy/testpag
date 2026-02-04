@@ -20,68 +20,161 @@
     <div class="encabezado-contenedor">
 
       <div class="marca-logo">
-        <img src="media/img/Captura de pantalla 2026-01-29 171431.png" alt="logo Elba" />
+
+        <img src="media/img/Logo1.png" alt="logo Elba" />
+
       </div>
 
       <nav class="nav-principal">
         <ul class="lista-nav">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Áreas de práctica</a></li>
-          <li><a href="#">Trayectoria</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+          <li><a href="#practicas">Áreas de práctica</a></li>
+          <li><a href="#sedes">Sedes</a></li>
           <li><a href="pages/Contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
-  <section class="fondo-inicio"></section>
 
 
   <main>
 
 
+    <!--Bio-->
 
-    <section class="bloque-texto animar-scroll">
-
-      <div class="titular">
-      <h1>Trayectoria profesional</h1>
-      <span class="destacado">Profesional con vocación</span>
-      </div>
-
-      <p>
-        Con una sólida trayectoria en el ejercicio del derecho, Elba Marcovecchio se destaca por su compromiso,
-         rigor profesional y enfoque estratégico en cada caso.
-         Su experiencia y dedicación han consolidado una práctica orientada a la defensa responsable
-         de los intereses de sus clientes, basada en la confianza, la ética y el trabajo constante.
-      </p>
-    </section>
-
-<!--Bio-->
-
-    <section class="bloque-texto animar-scroll bloque-bio">
+    <section class="bloque-texto animar-scroll bloque-bio" id="inicio">
 
     <div class="bio-contenedor">
 
       <div class="bio-texto">
         <div class="titular">
+          <h1>Estudio Jurídico</h1>
           <h1>Elba Marcovecchio</h1>
         </div>
+
+        <img src="media/img/Divisor.png" alt="imagen divisora" class="bio-separador">
+
         <p>
-          Con una sólida trayectoria en el ejercicio del derecho, Elba Marcovecchio se destaca por su compromiso,
-          rigor profesional y enfoque estratégico en cada caso.
+          Asesoramiento legal y estratégico
         </p>
       </div>
 
       <div class="bio-imagen">
-        <img src="media/img/Elba1.png" alt="Elba Marcovecchio">
+        <img src="media/img/Elba2.webp" alt="Elba Marcovecchio">
       </div>
 
 
     </div>
 
+    </section>
+
+
+    <!--Trayectoria-->
+
+    <section class="bloque-texto animar-scroll" id="trayectoria">
+
+      <div class="titular">
+      <h1>Trayectoria profesional</h1>
+      </div>
+
+      <p>
+        Con más de 25 años de ejercicio profesional, Elba Marcovecchio ha desarrollado
+        una práctica jurídica sólida y reconocida, con formación de posgrado en universidades de prestigio como la UCA,
+        UADE y la Universidad Austral. Su experiencia abarca el asesoramiento y la defensa legal en casos complejos,
+        combinando rigor técnico, visión estratégica y compromiso profesional.
+      </p>
+    </section>
 
 
 
+    <!--Areas Práctica-->
+<section class="bloque-texto animar-scroll" id="practicas">
+
+  <h1>Áreas de práctica</h1>
+
+  <div class="areas-contenedor">
+
+    <article class="card">
+      <div class="card-body">
+        <h1 class="card-title">Derecho de Familia</h1>
+        <p class="card-text">
+          Asesoramiento y representación en conflictos familiares y patrimoniales.
+        </p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-body">
+        <h1 class="card-title">Derecho Civil</h1>
+        <p class="card-text">
+          Intervención en litigios civiles y responsabilidad contractual.
+        </p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-body">
+        <h1 class="card-title">Derecho de las Personas</h1>
+        <p class="card-text">
+          Protección de derechos personalísimos y capacidad jurídica.
+        </p>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-body">
+        <h1 class="card-title">Tutela de Sujetos Vulnerables</h1>
+        <p class="card-text">
+          Defensa integral de personas en situación de vulnerabilidad.
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+
+    <section class="contenedor-centro" id="contacto">
+
+        <h2 class="titulo-formulario">Contacto</h2>
+
+      <div class="contenedor-forms">
+         <form
+            action="https://formspree.io/f/xgvpolge"
+            method="POST"
+            class="forms"
+            id="myForm">
+                <div class="fila-doble">
+                    <label>
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    </label>
+
+                    <label>
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                    </label>
+                </div>
+
+                <label class="campo-ancho">
+                    <input
+                    type="email"
+                    name="email"
+                    placeholder="Correo"
+                    required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Ingresa un correo válido">
+                </label>
+
+                <!-- Mensaje -->
+                <label class="campo-ancho">
+                    <textarea name="mensaje" rows="10" placeholder="Su consulta" required></textarea>
+                </label>
+
+                <button type="submit" >Contactar</button>
+            </form>
+        </div>
     </section>
 
 
@@ -91,23 +184,24 @@
 
 
 
-    <section class="contenedor-mapas">
+    <section class="contenedor-mapas" id="sedes">
 
 
       <!-- Iframes ubicación-->
 
         <div class="seccion-mapas">
-          <h3>Sede Buenos Aires</h3>
+          <h3>Oficina Buenos Aires</h3>
 
           <div class="mapa-contenedor">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4805594510135!2d-58.379100900000005!3d-34.5920078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab6cc93ffff%3A0x1d2033dccee79d88!2sArroyo%20844%20Piso%205%2C%20C1011%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1769741384436!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4805594510135!2d-58.379100900000005!3d-34.5920078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab6cc93ffff%3A0x1d2033dccee79d88!2sArroyo%20844%20Piso%205%2C%20C1011%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1769741384436!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+          </div>
 
           <p>Arroyo 844. Piso 5. CABA</p>
 
         </div>
 
         <div class="seccion-mapas">
-          <h3>Sede La Plata</h3>
+          <h3>Oficina La Plata</h3>
 
           <div class="mapa-contenedor">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.9470305341156!2d-57.95770442519456!3d-34.90777877361829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e64970d5a271%3A0x216a01381fc1d5d!2sDNO%2C%20Diag.%2074%201040%2C%20B1902%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1769741443963!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -126,7 +220,7 @@
 
 
   <!-- PIE DE PÁGINA -->
-<footer class="footer-base">
+<footer>
 
   <div class="footer-contenedor">
 
