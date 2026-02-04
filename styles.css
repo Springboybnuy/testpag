@@ -378,7 +378,7 @@ footer{
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .fila-doble {
     flex-direction: column;
   }
@@ -431,6 +431,5 @@ footer{
     gap: 2rem;
     }
 
-  
-  
+
 }
