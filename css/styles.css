@@ -68,15 +68,6 @@ ENCABEZADO
   z-index: 10;
   background-color:#ffffff;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
-  
-  /* fixed nav */
-  
-  transition:top 0.3s ease;
-}
-
-.encabezado-sitio.fijo {
-  position: fixed;
-  top: 0;
 }
 
 .encabezado-contenedor {
@@ -113,6 +104,7 @@ a:hover{
   color: var(--color-muted);
 }
 
+/* nav */
 .nav-principal{
   flex:1;
   display:flex;
@@ -130,6 +122,19 @@ a:hover{
   text-decoration: none;
   font-size: 1.2rem;
   color: var(--color-text);
+}
+
+
+/* 
+toggle base
+*/
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 
@@ -379,4 +384,34 @@ footer{
   .forms {
     max-width: 90%;
   }
+
+  .nav-toggle {
+      display: block;
+    }
+
+    .nav-principal {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+    }
+
+
+    .nav-principal .lista-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      gap: 1.5rem;
+      padding: 2rem 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .nav-principal.activo .lista-nav {
+      max-height: 25rem;
+      display: flex;
+    }
+
+  
 }

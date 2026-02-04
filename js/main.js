@@ -1,15 +1,3 @@
-/*  */
-const encabezado = document.querySelector('.encabezado-sitio');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 80) {
-    encabezado.classList.add('fijo');
-  } else {
-    encabezado.classList.remove('fijo');
-  }
-});
-
-
 /* observar */
 const elementos = document.querySelectorAll('.animar-scroll');
 
@@ -24,3 +12,11 @@ const observer = new IntersectionObserver((entradas) => {
 });
 
 elementos.forEach((el) => observer.observe(el));
+
+/* toggle nav */
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav-principal');
+
+toggle.addEventListener('click', () => {
+  nav.classList.toggle('activo');
+});
