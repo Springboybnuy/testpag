@@ -389,11 +389,15 @@ footer{
       display: block;
     }
 
+
+
     .nav-principal {
       position: absolute;
+      flex: none;  /* esto */
       top: 100%;
+      right: 0;
       left: 0;
-      width: 100%;
+      width: auto; /*esto  */
     }
 
 
